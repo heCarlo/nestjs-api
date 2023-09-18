@@ -8,11 +8,11 @@ POST http://localhost:3000/orders
 Content-Type: application/json
 
 {
-    "amount":500
+    "amount": 300
 }
 
 ###
-PATCH http://localhost:3000/orders/3f81a1c0-7f4f-4bd6-a9ec-460b90b2d756
+PATCH http://localhost:3000/orders/f31543a8-b87f-445e-822d-3b1408eaa766
 Content-Type: application/json
 
 {
@@ -20,5 +20,5 @@ Content-Type: application/json
 }
 
 ###
-DELETE http://localhost:3000/orders/3f81a1c0-7f4f-4bd6-a9ec-460b90b2d756
+DELETE http://localhost:3000/orders/f31543a8-b87f-445e-822d-3b1408eaa766
 
