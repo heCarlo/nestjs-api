@@ -1,14 +1,11 @@
-// Um controller deve abrigar o próprio contexto
-
 import { Controller, Get } from '@nestjs/common';
 import { AppService } from './app.service';
 
-@Controller() // Especifica para o Nest.js que o AppController é um controller
-// A classe controller abriga o roteamento, o acesso à API pelas rotas 
+@Controller() // Define que esta classe é um controlador
 export class AppController {
   constructor(private readonly appService: AppService) {}
 
-// Criamos rotas também utilizando decorators
+  // Define uma rota GET chamada 'teste'
   @Get('teste')
   getHello(): string {
     return this.appService.getHello();
