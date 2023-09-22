@@ -1,9 +1,12 @@
+# GET para listar todos os pedidos
 GET http://localhost:3000/orders
 
-###
+
+### GET para obter detalhes de um pedido específico
 GET http://localhost:3000/orders/ca4027fc-1f0f-46c9-b987-ad9c21013783
 
-###
+
+### POST para criar um novo pedido
 POST http://localhost:3000/orders
 Content-Type: application/json
 
@@ -11,7 +14,8 @@ Content-Type: application/json
     "amount": 800
 }
 
-###
+
+### PATCH para atualizar um pedido
 PATCH http://localhost:3000/orders/ca4027fc-1f0f-46c9-b987-ad9c21013783
 Content-Type: application/json
 
@@ -19,6 +23,8 @@ Content-Type: application/json
     "amount": 700
 }
 
-###
+
+### DELETE para excluir um pedido
 DELETE http://localhost:3000/orders/ca4027fc-1f0f-46c9-b987-ad9c21013783
+
 
